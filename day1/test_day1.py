@@ -19,6 +19,8 @@ zoneight234
 7pqrstsixteen
 """
 
+INPUT_FILE = "day1/input.txt"
+
 def test_day1_sample():
     """Problem statement sample"""
 
@@ -27,8 +29,7 @@ def test_day1_sample():
 
 def test_day1_problem():
     """Main problem statement - part 1"""
-    fname = "day1_input.txt"
-    with open(fname, 'r', encoding='utf-8') as file:
+    with open(INPUT_FILE, 'r', encoding='utf-8') as file:
         ans = day1.part1_sum(file.readlines())
     assert ans == 55477
 
@@ -41,6 +42,6 @@ def test_day2_sample():
 def test_part2_problem():
     """Part2 from file"""
 
-    with open("day1_input.txt", 'r', encoding='utf-8') as file:
+    with open(INPUT_FILE, 'r', encoding='utf-8') as file:
         ans = day1.part2_sum(file.readlines())
     assert ans == 54431
